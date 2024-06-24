@@ -3,7 +3,7 @@ const title = document.querySelector(".title")
 const loader = document.querySelector(".loader")
 
 if (!localStorage.counter) {
-  localStorage.setItem("counter", 1)
+  localStorage.setItem("counter", 0)
 }
 
 window.addEventListener("load", (e) => {
