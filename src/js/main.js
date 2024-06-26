@@ -8,6 +8,7 @@ if (!localStorage.counter) {
 
 window.addEventListener("load", (e) => {
   loader.style.display = "none"
+  hamster.style.display = "block"
 })
 
 title.innerText = `Счет: ${localStorage.counter}`
