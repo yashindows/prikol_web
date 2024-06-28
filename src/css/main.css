@@ -21,13 +21,16 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 5vh;
+  padding: 5dvh;
 }
 
 .wrapper {
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .wrapper,
@@ -40,18 +43,18 @@ body {
 }
 
 .title {
-  margin-bottom: 5vh;
+  margin-bottom: 5dvh;
 }
 
 .content-image {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 80dvh;
   transition: 0.1s;
   display: none;
 }
 
 .btn {
-  padding: 10px;
+  padding: 1vh;
   background-color: #2e43ff;
   border: none;
   outline: none;
@@ -79,6 +82,17 @@ body {
     border-radius: 0;
     background: #ffa516;
     clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%);
+  }
+}
+
+body.flag-bg {
+  background: url("../assets/russia.gif") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  .title {
+    background-color: #33333350;
+    padding: 10px;
+    border-radius: 5px;
   }
 }
 

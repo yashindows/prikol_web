@@ -16,8 +16,15 @@ title.innerText = `Счет: ${localStorage.counter}`
 hamster.addEventListener("click", () => {
   ++localStorage.counter
   hamster.style.scale = 0.9
+  if (+localStorage.counter >= 500) {
+    document.body.classList.add("flag-bg")
+  }
   title.innerText = `Счет: ${localStorage.counter}`
   setTimeout(() => {
     hamster.style.scale = 1
   }, 50)
 })
+
+if (+localStorage.counter >= 500) {
+  document.body.classList.add("flag-bg")
+}
